@@ -39,7 +39,7 @@
         }
 
         .header-logo { display: flex; align-items: center; gap: 15px; }
-        .header-logo img { height: 50px; filter: grayscale(100%) contrast(1.2); }
+        .header-logo img { height: 45px; filter: grayscale(100%) brightness(0.9); }
         .brand { font-weight: 600; }
 
         nav a {
@@ -54,7 +54,7 @@
         nav a:hover { color: var(--accent-gold); }
 
         .container {
-            max-width: 900px;
+            max-width: 950px;
             margin: 4rem auto;
             padding: 0 5%;
         }
@@ -69,13 +69,16 @@
         }
 
         .profile-img-container img {
-            width: 250px;
-            height: 250px;
-            object-fit: contain; /* Phù hợp với logo dạng ngang */
-            padding: 20px;
+            width: 220px;
+            height: 280px;
+            object-fit: cover; /* Cắt ảnh chân dung cân đối */
             border: 1px solid var(--accent-gold);
+            padding: 8px;
             background-color: var(--bg-card);
+            filter: grayscale(20%) contrast(1.1); /* Chút cổ điển tăng tính editorial */
         }
+
+        .profile-info { flex: 1; }
 
         .profile-info h1 {
             font-size: 3rem;
@@ -88,13 +91,14 @@
             font-weight: 400;
             margin-bottom: 1.5rem;
             font-size: 1.2rem;
+            letter-spacing: 0.5px;
         }
 
         .goals-section h2 { font-size: 2rem; margin-bottom: 2rem; border-left: 4px solid var(--accent-gold); padding-left: 15px;}
         
         .goals-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-bottom: 4rem;
         }
@@ -123,7 +127,7 @@
         .quote-mark {
             font-family: 'Playfair Display', serif;
             font-size: 5rem;
-            color: var(--border-line);
+            color: #262626;
             position: absolute;
             top: 10px;
             left: 50%;
@@ -132,14 +136,14 @@
         }
 
         .quote-text {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-style: italic;
             margin-bottom: 1.5rem;
             position: relative;
             z-index: 1;
         }
 
-        .quote-author { color: var(--accent-gold); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 2px;}
+        .quote-author { color: var(--accent-gold); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px;}
 
         footer { border-top: 1px solid var(--border-line); text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem; margin-top: 3rem; }
     </style>
@@ -148,7 +152,7 @@
 
     <header>
         <div class="header-logo">
-            <img src="me.png" alt="UET Logo">
+            <img src="Logo_HUET.svg.png" alt="UET Logo">
             <span class="brand">LÊ ĐỨC PHONG</span>
         </div>
         <nav>
@@ -161,12 +165,12 @@
     <div class="container">
         <div class="profile-section">
             <div class="profile-img-container">
-                <img src="Logo_HUET.svg.png" alt="Profile Image">
+                <img src="me.png" alt="Lê Đức Phong">
             </div>
             <div class="profile-info">
                 <h1>Lê Đức Phong</h1>
                 <h3>Mã sinh viên: 25021932 | VNU-UET</h3>
-                <p>Chào mừng đến với không gian học thuật cá nhân của tôi. Nơi đây lưu trữ lại quá trình nghiên cứu, phát triển kỹ năng số và những suy tư về ứng dụng công nghệ, đặc biệt là Trí tuệ Nhân tạo trong môi trường đại học.</p>
+                <p>Chào mừng đến với không gian học thuật cá nhân của tôi. Nơi đây lưu trữ lại quá trình nghiên cứu, phát triển năng lực số và những góc nhìn thực tiễn về ứng dụng công nghệ, đặc biệt là Trí tuệ Nhân tạo trong môi trường đại học.</p>
             </div>
         </div>
 
@@ -175,15 +179,15 @@
             <div class="goals-grid">
                 <div class="goal-card">
                     <div class="goal-num">01</div>
-                    <p class="goal-text">Nâng cao năng lực Kỹ năng Số (Digital Skills) ứng dụng trực tiếp vào nghiên cứu khoa học.</p>
+                    <p class="goal-text">Nâng cao hệ thống năng lực Kỹ năng Số (Digital Skills) ứng dụng vào xử lý dữ liệu và nghiên cứu chuyên sâu.</p>
                 </div>
                 <div class="goal-card">
                     <div class="goal-num">02</div>
-                    <p class="goal-text">Xây dựng lăng kính phản biện về đạo đức khi ứng dụng Trí tuệ Nhân tạo tạo sinh.</p>
+                    <p class="goal-text">Xây dựng hệ lăng kính phản biện vững chắc về tính liêm chính và đạo đức công nghệ trong thời đại GenAI.</p>
                 </div>
                 <div class="goal-card">
                     <div class="goal-num">03</div>
-                    <p class="goal-text">Làm chủ các công cụ cộng tác tuyến để tối ưu hoá hiệu suất làm việc nhóm.</p>
+                    <p class="goal-text">Làm chủ các mô hình hợp tác đa nền tảng trực tuyến nhằm tối ưu hóa hiệu suất quản lý dự án học thuật.</p>
                 </div>
             </div>
         </div>
@@ -193,7 +197,7 @@
             <p class="quote-text">
                 Cốt lõi của việc làm chủ AI không nằm ở kỹ năng viết câu lệnh, mà nằm ở nền tảng tư duy phản biện và la bàn đạo đức của người cầm lái.
             </p>
-            <span class="quote-author">Lê Đức Phong — Trích Báo cáo AI (25021932)</span>
+            <span class="quote-author">Lê Đức Phong — MSV: 25021932</span>
         </div>
     </div>
 
