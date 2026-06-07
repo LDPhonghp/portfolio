@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me — Lê Đức Phong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --bg-card: #1a1a1a;
+            --text-light: #e6e2d3;
+            --text-muted: #9e9a8f;
+            --accent-gold: #c5a059;
+            --border-line: #333333;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+        }
+
+        h1, h2, h3, .brand, .quote-text {
+            font-family: 'Playfair Display', serif;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-line);
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo { display: flex; align-items: center; gap: 15px; }
+        .header-logo img { height: 50px; filter: grayscale(100%) contrast(1.2); }
+        .brand { font-weight: 600; }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: var(--accent-gold); }
+
+        .container {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 5%;
+        }
+
+        .profile-section {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+            border-bottom: 1px solid var(--border-line);
+            padding-bottom: 4rem;
+        }
+
+        .profile-img-container img {
+            width: 250px;
+            height: 250px;
+            object-fit: contain; /* Phù hợp với logo dạng ngang */
+            padding: 20px;
+            border: 1px solid var(--accent-gold);
+            background-color: var(--bg-card);
+        }
+
+        .profile-info h1 {
+            font-size: 3rem;
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-info h3 {
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .goals-section h2 { font-size: 2rem; margin-bottom: 2rem; border-left: 4px solid var(--accent-gold); padding-left: 15px;}
+        
+        .goals-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .goal-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-line);
+            padding: 2rem;
+        }
+
+        .goal-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+
+        .quote-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-line);
+            position: relative;
+        }
+
+        .quote-mark {
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            color: var(--border-line);
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            line-height: 1;
+        }
+
+        .quote-text {
+            font-size: 1.6rem;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .quote-author { color: var(--accent-gold); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 2px;}
+
+        footer { border-top: 1px solid var(--border-line); text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">
+            <img src="Logo_HUET.svg.png" alt="UET Logo">
+            <span class="brand">LÊ ĐỨC PHONG</span>
+        </div>
+        <nav>
+            <a href="index.html">Dự án</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="conclusion.html">Tổng kết</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-img-container">
+                <img src="Logo_HUET.svg.png" alt="Profile Image">
+            </div>
+            <div class="profile-info">
+                <h1>Lê Đức Phong</h1>
+                <h3>Mã sinh viên: 25021932 | VNU-UET</h3>
+                <p>Chào mừng đến với không gian học thuật cá nhân của tôi. Nơi đây lưu trữ lại quá trình nghiên cứu, phát triển kỹ năng số và những suy tư về ứng dụng công nghệ, đặc biệt là Trí tuệ Nhân tạo trong môi trường đại học.</p>
+            </div>
+        </div>
+
+        <div class="goals-section">
+            <h2>Định Hướng Học Tập</h2>
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <div class="goal-num">01</div>
+                    <p class="goal-text">Nâng cao năng lực Kỹ năng Số (Digital Skills) ứng dụng trực tiếp vào nghiên cứu khoa học.</p>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-num">02</div>
+                    <p class="goal-text">Xây dựng lăng kính phản biện về đạo đức khi ứng dụng Trí tuệ Nhân tạo tạo sinh.</p>
+                </div>
+                <div class="goal-card">
+                    <div class="goal-num">03</div>
+                    <p class="goal-text">Làm chủ các công cụ cộng tác tuyến để tối ưu hoá hiệu suất làm việc nhóm.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-section">
+            <span class="quote-mark">"</span>
+            <p class="quote-text">
+                Cốt lõi của việc làm chủ AI không nằm ở kỹ năng viết câu lệnh, mà nằm ở nền tảng tư duy phản biện và la bàn đạo đức của người cầm lái.
+            </p>
+            <span class="quote-author">Lê Đức Phong — Trích Báo cáo AI (25021932)</span>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 VNU-UET Digital Skills Portfolio · Sinh viên: Lê Đức Phong (25021932)
+    </footer>
+
+</body>
+</html>

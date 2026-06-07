@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusion — Lê Đức Phong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --bg-card: #1a1a1a;
+            --text-light: #e6e2d3;
+            --text-muted: #9e9a8f;
+            --accent-gold: #c5a059;
+            --border-line: #333333;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: 'Lora', serif;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-line);
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-logo { display: flex; align-items: center; gap: 15px; }
+        .header-logo img { height: 50px; filter: grayscale(100%) contrast(1.2); }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: var(--accent-gold); }
+
+        main { max-width: 1000px; margin: 5rem auto; padding: 0 5%; }
+
+        .conclusion-header { text-align: center; margin-bottom: 4rem; }
+        .conclusion-header h1 { font-size: 3rem; color: var(--accent-gold); margin-bottom: 1rem; }
+        .conclusion-header p { font-size: 1.2rem; color: var(--text-muted); font-style: italic; max-width: 700px; margin: 0 auto; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-line);
+            padding: 2rem;
+            text-align: center;
+            transition: border-color 0.3s ease;
+        }
+
+        .skill-card:hover { border-color: var(--accent-gold); }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+
+        .skill-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .skill-desc { color: var(--text-muted); font-size: 0.95rem; }
+
+        footer { border-top: 1px solid var(--border-line); padding: 2rem 5%; display: flex; justify-content: space-between; align-items: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 5rem; }
+        .footer-logo { display: flex; align-items: center; gap: 10px; }
+        .footer-logo img { height: 30px; filter: grayscale(100%); opacity: 0.7;}
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">
+            <img src="Logo_HUET.svg.png" alt="UET Logo">
+            <span class="brand">LÊ ĐỨC PHONG</span>
+        </div>
+        <nav>
+            <a href="index.html">Dự án</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="conclusion.html">Tổng kết</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="conclusion-header">
+            <h1>Tổng Kết Kỹ Năng</h1>
+            <p>Hành trình hoàn thiện bản thân thông qua việc nghiên cứu, áp dụng công cụ số và thiết lập tư duy công nghệ đúng đắn.</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">I.</div>
+                <div class="skill-name">Digital Literacy</div>
+                <p class="skill-desc">Sử dụng thành thạo các công cụ số, tối ưu hóa nền tảng AI (ChatGPT, DALL-E) phục vụ mục đích học thuật.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">II.</div>
+                <div class="skill-name">Critical Thinking</div>
+                <p class="skill-desc">Đánh giá và kiểm chứng thông tin đa chiều, phân tích ranh giới đạo đức trong kỷ nguyên số.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">III.</div>
+                <div class="skill-name">Collaboration</div>
+                <p class="skill-desc">Quản lý dự án, tổ chức tài liệu lưu trữ khoa học và điều phối làm việc nhóm trên không gian ảo.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">IV.</div>
+                <div class="skill-name">Research</div>
+                <p class="skill-desc">Tìm kiếm, chắt lọc và đánh giá tài liệu khoa học chuyên sâu một cách hệ thống.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="Logo_HUET.svg.png" alt="UET">
+            <span>© 2024 VNU-UET · Lê Đức Phong (25021932)</span>
+        </div>
+        <div>
+            Phát triển Tư duy — Làm chủ Công nghệ
+        </div>
+    </footer>
+
+</body>
+</html>
